@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 2.8)
+project( DisplayImage )
+set( "OpenCV_DIR" "~/apps/opencv/release")
+include_directories("~/apps/opencv/install/include" )
+find_package( OpenCV REQUIRED )
+add_executable( DisplayImage DisplayImage.cpp )
+target_link_libraries( DisplayImage ${OpenCV_LIBS} )
